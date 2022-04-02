@@ -150,12 +150,7 @@ def do_bussiness(folder_name, now_path):
 if __name__ == '__main__':
     random.seed(1)
     root_path = os.getcwd() + r'\CCPD-sub-01'
-    # folders = ['base-3144', 'blur-1272', 'fn-1288', 'green-3112', 'rotate-2120', 'weather-1304']
-    folders = ['db-1176']
-    max_over = 50
-    i = 0
+    # folders = []
+    folders = ['db-1176', 'base-3144', 'blur-1272', 'fn-1288', 'green-3112', 'rotate-2120', 'weather-1304']
     for val in folders:
         do_bussiness(val, root_path)
-        i += 1
-        if i > max_over:
-            break
